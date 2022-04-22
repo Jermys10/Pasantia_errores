@@ -1,0 +1,38 @@
+﻿@page
+@model ProductoModel
+@{
+
+    ViewData["Title"] = "Productos";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Seleccione un producto de la lista</h1>
+</div>
+
+<div style="width:300px; height:400px;"
+     onmouseover="resaltar1()"
+     onmouseout="quitar1()">
+   
+    <img id="pro1" src="https://images.samsung.com/is/image/samsung/latin-side-by-side-rs27t5561b1ap-rs27t5561b1-ap-frontjetblack-211555555?$720_576_PNG$"/>
+    <p>Refrigeradora - Precio: $2000 <a href="Pedidos">Realizar pedido</a></p>
+</div>
+
+<div style="width:300; height:400;">
+    <img id="pro2" src="https://media.nidux.net/pull/800/599/10746/2619-product-60f891cfbb7b9-c4.jpg" />
+    <p>Cocina eléctrica - Precio: $1500 <a href="Pedidos">Realizar pedido</a></p>
+</div>
+
+
+<script language="javascript">
+
+    function resaltar1() {
+        document.getElementById("pro1").style.border = "1px solid blue";
+    }
+
+    function quitar1() {
+        document.getElementById("pro1").style.border = "0px solid blue";
+    }
+
+
+</script>
